@@ -81,25 +81,18 @@ Create a new wrapper file inside `src/components/Templates/` (e.g., `YourNewTemp
 - Keep the interface simple and feed the profile data down to your subcomponents.
 
 ### Step 3: Register the Template
-To make your template live, register it in **two places**:
+To make your template live, register it in **only one place**:
 
-1. **Config Registration**: In `src/config/templates.js`, add your template key and configuration (such as wrapping background/text styles):
-   ```javascript
-   export const TEMPLATES_CONFIG = {
-     // ... existing templates ...
-     YOUR_NEW_TEMPLATE: {
-       className: "bg-white text-zinc-900 min-h-screen w-full",
-     },
-   };
-   ```
-
-2. **Component Mapping**: In `src/app/[templateName]/page.jsx`, import your high-level component and map it inside the `TEMPLATE_COMPONENTS` object:
+1. **Register in Config**: In `src/config/templates.js`, import your high-level component and add your template key, component reference, and wrapping styling rules inside `TEMPLATES_CONFIG`:
    ```javascript
    import YourNewTemplate from "@/components/Templates/YourNewTemplate";
 
-   const TEMPLATE_COMPONENTS = {
+   export const TEMPLATES_CONFIG = {
      // ... existing templates ...
-     YOUR_NEW_TEMPLATE: YourNewTemplate,
+     YOUR_NEW_TEMPLATE: {
+       component: YourNewTemplate,
+       className: "bg-white text-zinc-900 min-h-screen w-full",
+     },
    };
    ```
 
@@ -130,4 +123,6 @@ yarn build
 ---
 
 ## 📄 License
-Private/Under development. Managed by Ramit Koul & HuntYourTribe.
+
+This project is licensed under the MIT License - see the [LICENSE](file:///Users/rkwap/Repos/hyt-templates/LICENSE) file for details.
+
