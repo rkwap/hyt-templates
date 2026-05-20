@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@bprogress/next": "^3.2.12",
+    "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-slot": "^1.2.4",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.525.0",
+    "next": "14.2.5",
+    "next-themes": "^0.4.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.15",
+    "@tailwindcss/typography": "^0.5.14",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ultracite": "7.7.0"
+  },
+  "name": "hyt-templates",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check": "ultracite check",
+    "fix": "ultracite fix"
+  },
+  "version": "0.1.0",
+  "private": true
+}

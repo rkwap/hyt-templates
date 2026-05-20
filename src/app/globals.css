@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 0.5% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 0.5% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 0.5% 10%;
+    --primary: 240 0.5% 10%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 24 4% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 24 4% 45%;
+    --muted-foreground: 24 4% 45%;
+    --accent: 208 100% 49%;
+    --accent-hover: 212.81 100% 39.8%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 164 100% 20%;
+    --success-foreground: 120 0% 100%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 208 100% 49%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --blue-accent: 213, 100%, 51%;
+    --highlight: 180, 7%, 95%;
+    --readcv-primary: 0, 0%, 93.33%;
+    --readcv-secondary: 0, 0%, 73.33%;
+    --readcv-background: 0, 0%, 13%;
+    --readcv-grey: 0, 0%, 53%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --monochrome-border: 0, 0%, 45.1%;
+    --monochrome-primary: 0, 0%, 96%;
+    --monochrome-secondary: 0, 0%, 63.92%;
+    --monochrome-background: 0, 0%, 3.92%;
+    --monochrome-tertiary: 0, 0%, 83.14%;
+
+    /* Notion Design System Colors */
+    --notion-text-primary: 25 21% 22%; /* #37352F */
+    --notion-text-secondary: 0 0% 44%; /* #6F6F6C */
+    --notion-text-tertiary: 0 0% 59%; /* #979794 */
+    --notion-bg-primary: 0 0% 100%; /* #FFFFFF */
+    --notion-bg-secondary: 30 10% 96%; /* #F6F5F4 */
+    --notion-border-light: 60 8% 91%; /* #E9E9E7 */
+    --notion-border-medium: 60 6% 86%; /* #DDDDDA */
+  }
+
+  .dark {
+    --background: 240 0.5% 10%;
+    --foreground: 0 0% 100%;
+    --card: 240 0.5% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 240 0.5% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 240 0.5% 10%;
+    --secondary: 24 4% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 24 4% 45%;
+    --muted-foreground: 24 4% 45%;
+    --accent: 208 100% 49%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 208 100% 49%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --blue-accent: 213, 100%, 51%;
+    --highlight: 180, 7%, 95%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-padding-top: 100px;
+  @apply scroll-smooth;
+}
