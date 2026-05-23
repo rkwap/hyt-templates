@@ -11,6 +11,7 @@ const containerVariants = cva("", {
       readcv: "my-[3.75rem] text-sm",
       retro: "mt-8 space-y-4",
       monochrome: "mt-5 w-full border-monochrome-tertiary border-t-4 pt-5",
+      LoraCream: "mt-16 w-full border-[#DDD9D0] border-t-2 pt-8",
     },
   },
   defaultVariants: {
@@ -24,6 +25,7 @@ const innerContainerVariants = cva("", {
       readcv: "mt-6 ml-4 flex flex-col gap-9 sm:ml-0",
       retro: "flex flex-col items-start justify-between gap-3",
       monochrome: "flex flex-col gap-2",
+      LoraCream: "flex flex-col",
     },
   },
   defaultVariants: {
@@ -38,6 +40,8 @@ const headingVariants = cva("", {
       readcv: "mb-[0.7rem] text-readcv-primary",
       retro: "pt-4 font-bold font-mono text-3xl",
       monochrome: "mb-2 font-bold text-2xl md:mb-4 md:text-3xl",
+      LoraCream:
+        "mb-8 font-bold text-[#9E9A93] text-[10px] uppercase tracking-widest",
     },
   },
   defaultVariants: {
@@ -53,6 +57,8 @@ const itemMainContainerVariants = cva("", {
       readcv: "",
       retro: "rounded-lg border bg-card text-card-foreground shadow-sm",
       monochrome: "flex flex-col border-secondary/20 border-b last:border-b-0",
+      LoraCream:
+        "flex flex-col border-[#DDD9D0] border-b py-6 first:pt-0 last:border-b-0",
     },
   },
   defaultVariants: {
@@ -66,6 +72,7 @@ const itemInnerContainerVariants = cva("", {
       readcv: "flex flex-col gap-1",
       retro: "",
       monochrome: "py-1 pl-1 md:px-4",
+      LoraCream: "",
     },
   },
   defaultVariants: {
@@ -79,12 +86,14 @@ const linkContainerVariants = cva("", {
       readcv: "",
       retro: "line-clamp-2 pt-3 pl-6 font-mono font-semibold text-xl",
       monochrome: "text-lg",
+      LoraCream: "font-semibold text-[#1C1C1A] text-sm",
     },
   },
   defaultVariants: {
     template: "default",
   },
 });
+
 const linkVariants = cva("", {
   variants: {
     template: {
@@ -123,6 +132,8 @@ const markdownVariants = cva(
         retro: "p-6 pt-0 font-mono",
         monochrome:
           "prose-sm overflow-auto prose-headings:text-monochrome-secondary prose-strong:text-monochrome-secondary text-monochrome-secondary marker:text-monochrome-secondary",
+        LoraCream:
+          "prose-sm prose mt-2 overflow-auto break-words prose-headings:text-[#9E9A93] prose-strong:text-[#1C1C1A] text-[#1C1C1A]/75 marker:text-[#9E9A93]",
       },
     },
     defaultVariants: {

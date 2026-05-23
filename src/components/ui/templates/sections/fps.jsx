@@ -9,6 +9,7 @@ const containerVariants = cva("", {
       readcv: "my-[3.75rem] text-sm",
       retro: "mt-10 space-y-4",
       monochrome: "mt-5 w-full border-monochrome-tertiary border-t-4 pt-5",
+      LoraCream: "mt-16 w-full border-[#DDD9D0] border-t-2 pt-8",
     },
   },
   defaultVariants: {
@@ -23,6 +24,8 @@ const headingVariants = cva("", {
       readcv: "mb-[0.7rem] text-readcv-primary",
       retro: "font-bold font-mono text-3xl",
       monochrome: "mb-2 font-bold text-2xl md:mb-4 md:text-3xl",
+      LoraCream:
+        "mb-8 font-bold text-[#9E9A93] text-[10px] uppercase tracking-widest",
     },
   },
   defaultVariants: {
@@ -37,6 +40,7 @@ const listVariants = cva("", {
       readcv: "mt-6 ml-4 flex flex-col gap-6 sm:ml-0",
       retro: "space-y-4 lg:space-y-2",
       monochrome: "flex flex-col gap-2 pl-1 md:pl-4",
+      LoraCream: "flex flex-col",
     },
   },
   defaultVariants: {
@@ -51,6 +55,8 @@ const linkVariants = cva("", {
       readcv: "overflow-auto break-words text-readcv-secondary text-sm",
       retro: "flex-1 font-mono font-semibold text-md text-zinc-700 md:text-lg",
       monochrome: "overflow-auto break-words text-sm md:text-lg",
+      LoraCream:
+        "block border-[#DDD9D0] border-b py-4 text-[#1C1C1A] text-sm transition-colors duration-150 last:border-b-0 hover:text-[#C9A84C]",
     },
   },
   defaultVariants: {
