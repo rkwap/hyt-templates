@@ -18,6 +18,7 @@ const containerVariants = cva("", {
     template: "default",
   },
 });
+
 const innerContainerVariants = cva("", {
   variants: {
     template: {
@@ -60,7 +61,7 @@ const itemMainContainerVariants = cva("", {
       monochrome:
         "grid-cols-[auto_1fr] grid-rows-[auto_1fr] gap-x-4 border-secondary/20 border-b py-1 pl-1 last:border-b-0 md:grid md:px-4",
       LoraCream:
-        "flex flex-row items-start gap-4 border-[#DDD9D0] border-b py-6 first:pt-0 last:border-b-0",
+        "flex flex-col gap-4 border-[#DDD9D0] border-b py-6 first:pt-0 last:border-b-0",
     },
   },
   defaultVariants: {
@@ -183,36 +184,41 @@ const Product = ({ products_ih, template = "default", config }) => {
             id={`indie-product-${index + 1}`}
             key={product.name || index}
           >
-            {product.logo ? (
-              <Image
-                alt="Product-Logo"
-                className={logoVariants({ template })}
-                height={50}
-                src={product.logo}
-                unoptimized
-                width={50}
-              />
-            ) : (
-              <div className="flex h-[50px] w-[50px] items-center justify-center self-start rounded-lg bg-secondary/20 font-bold text-lg">
-                {product.name?.charAt(0) || "P"}
-              </div>
-            )}
-            <div className={itemInnerContainerVariants({ template })}>
-              <h3 className={linkContainerVariants({ template })}>
-                <CustomLink
-                  className={linkVariants({ template })}
-                  classNames={{ label: "line-clamp-1" }}
-                  iconSize={16}
-                  label={product.name}
-                  url={product.url}
+            {/* Row 1: Logo + Title always in same line */}
+            <div className="flex flex-row items-center gap-4">
+              {product.logo ? (
+                <Image
+                  alt="Product-Logo"
+                  className={logoVariants({ template })}
+                  height={50}
+                  src={product.logo}
+                  unoptimized
+                  width={50}
                 />
-              </h3>
-              {product.revenue > 0 && (
-                <span className={revenueVariants({ template })}>
-                  MRR: ${product.revenue}
-                </span>
+              ) : (
+                <div className="flex h-[50px] w-[50px] flex-shrink-0 items-center justify-center rounded-lg bg-secondary/20 font-bold text-lg">
+                  {product.name?.charAt(0) || "P"}
+                </div>
               )}
+              <div className={itemInnerContainerVariants({ template })}>
+                <h3 className={linkContainerVariants({ template })}>
+                  <CustomLink
+                    className={linkVariants({ template })}
+                    classNames={{ label: "line-clamp-1" }}
+                    iconSize={16}
+                    label={product.name}
+                    url={product.url}
+                  />
+                </h3>
+                {product.revenue > 0 && (
+                  <span className={revenueVariants({ template })}>
+                    MRR: ${product.revenue}
+                  </span>
+                )}
+              </div>
             </div>
+
+            {/* Row 2: Description always below */}
             <MarkdownRenderer
               className={markdownVariants({ template })}
               config={mergedConfig}

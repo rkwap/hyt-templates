@@ -1,3 +1,12 @@
+
+function parseBold(text) {
+  if (!text) return null;
+  const parts = text.split(/\*\*(.*?)\*\*/g);
+  return parts.map((part, i) =>
+    i % 2 === 1 ? <strong key={i} className="font-semibold text-[#1C1C1A]">{part}</strong> : part
+  );
+}
+
 function formatDuration(duration) {
   if (!duration) {
     return "";
@@ -63,7 +72,7 @@ export default function Experience(props) {
               </p>
               {description && (
                 <p className="mt-2 whitespace-pre-line text-[#1C1C1A]/75 text-sm leading-relaxed">
-                  {description}
+                  {parseBold(description)}
                 </p>
               )}
               {tags.length > 0 && (

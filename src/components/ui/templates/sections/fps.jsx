@@ -56,7 +56,7 @@ const linkVariants = cva("", {
       retro: "flex-1 font-mono font-semibold text-md text-zinc-700 md:text-lg",
       monochrome: "overflow-auto break-words text-sm md:text-lg",
       LoraCream:
-        "block border-[#DDD9D0] border-b py-4 text-[#1C1C1A] text-sm transition-colors duration-150 last:border-b-0 hover:text-[#C9A84C]",
+        "flex items-center gap-1 border-[#DDD9D0] border-b py-4 text-[#1C1C1A] text-sm transition-colors duration-150 last:border-b-0 hover:text-[#C9A84C]",
     },
   },
   defaultVariants: {
