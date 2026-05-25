@@ -163,10 +163,17 @@ module.exports = {
     "bg-cyan-500",
     "bg-fuchsia-500",
     "animate-pulse-slow",
+    // Future-proof dynamic patterns (Simplified & Warning-Free)
+
     { pattern: /bg-(.+)-\d+/ },
     { pattern: /text-(.+)-\d+/ },
     { pattern: /bg-(.+)-\d+\/\d+/ },
     { pattern: /border-(.+)-\d+\/\d+/ },
-    { pattern: /group-hover:bg-(.+)-\d+\/\d+/ },
+    // The clean fix for your group-hover warning
+    {
+      pattern: /^bg-[a-z]+-\d+\/\d+$/,
+      variants: ["group-hover"],
+    },
+    // { pattern: /group-hover:bg-(.+)-\d+\/\d+/ },
   ],
 };
