@@ -10,11 +10,10 @@ const containerVariants = cva("", {
       retro: "mt-10 space-y-4",
       monochrome: "mt-5 w-full border-monochrome-tertiary border-t-4 pt-5",
       LoraCream: "mt-16 w-full border-[#DDD9D0] border-t-2 pt-8",
+      NightScript: "w-full",
     },
   },
-  defaultVariants: {
-    template: "default",
-  },
+  defaultVariants: { template: "default" },
 });
 
 const headingVariants = cva("", {
@@ -26,11 +25,19 @@ const headingVariants = cva("", {
       monochrome: "mb-2 font-bold text-2xl md:mb-4 md:text-3xl",
       LoraCream:
         "mb-8 font-bold text-[#9E9A93] text-[10px] uppercase tracking-widest",
+      NightScript: "mb-8 font-bold text-3xl text-zinc-100 md:text-4xl",
     },
   },
-  defaultVariants: {
-    template: "default",
+  defaultVariants: { template: "default" },
+});
+
+const subheadingVariants = cva("hidden", {
+  variants: {
+    template: {
+      NightScript: "hidden",
+    },
   },
+  defaultVariants: { template: "default" },
 });
 
 const listVariants = cva("", {
@@ -41,11 +48,10 @@ const listVariants = cva("", {
       retro: "space-y-4 lg:space-y-2",
       monochrome: "flex flex-col gap-2 pl-1 md:pl-4",
       LoraCream: "flex flex-col",
+      NightScript: "space-y-6",
     },
   },
-  defaultVariants: {
-    template: "default",
-  },
+  defaultVariants: { template: "default" },
 });
 
 const linkVariants = cva("", {
@@ -57,11 +63,11 @@ const linkVariants = cva("", {
       monochrome: "overflow-auto break-words text-sm md:text-lg",
       LoraCream:
         "flex items-center gap-1 border-[#DDD9D0] border-b py-4 text-[#1C1C1A] text-sm transition-colors duration-150 last:border-b-0 hover:text-[#C9A84C]",
+      NightScript:
+        "flex items-center gap-1 border-zinc-800 border-b py-4 text-sm text-zinc-300 underline-offset-4 transition-colors duration-150 last:border-b-0 hover:text-zinc-100 hover:underline",
     },
   },
-  defaultVariants: {
-    template: "default",
-  },
+  defaultVariants: { template: "default" },
 });
 
 const FeaturedSocialPostsSection = ({
@@ -78,6 +84,9 @@ const FeaturedSocialPostsSection = ({
       id="featured-social-posts"
     >
       <h2 className={headingVariants({ template })}>Featured Social Posts</h2>
+      <p className={subheadingVariants({ template })}>
+        Moments worth sharing beyond the code!
+      </p>
       <ul className={listVariants({ template })}>
         {featured_social_posts.map((post, index) => (
           <li id={`featured-social-post-${index + 1}`} key={index}>
