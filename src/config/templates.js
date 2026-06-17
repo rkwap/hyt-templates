@@ -4,6 +4,7 @@ import MonochromeTemplate from "@/components/Templates/MonochromeTemplate";
 import NightScriptTemplate from "@/components/Templates/NightScriptTemplate";
 import ReadCVTemplate from "@/components/Templates/ReadCVTemplate";
 import RetroTemplate from "@/components/Templates/RetroTemplate";
+import VesperTemplate from "@/components/Templates/VesperTemplate";
 
 export const TEMPLATES_CONFIG = {
   DEFAULT_TEMPLATE: {
@@ -33,5 +34,10 @@ export const TEMPLATES_CONFIG = {
     // Near-black background, zinc-100 text, monospace font — terminal/dev aesthetic
     // font-mono should resolve to JetBrains Mono or similar in tailwind.config.js
     className: "bg-[#0a0a0a] text-zinc-100 min-h-screen w-full dark font-mono",
+  },
+  VESPER_TEMPLATE: {
+    component: VesperTemplate,
+    // Same dark palette as Vesper, sidebar layout with fixed left nav
+    className: "bg-[#0a0a0a] text-zinc-100 min-h-screen w-full dark",
   },
 };

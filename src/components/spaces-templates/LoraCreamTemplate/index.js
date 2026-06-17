@@ -1,0 +1,15 @@
+export { default as About } from "./about";
+export { default as Blogs } from "./blogs";
+export { default as Certifications } from "./certifications";
+export { default as Contact } from "./contact";
+export { default as Education } from "./education";
+export { default as Experience } from "./experience";
+export { default as Headline } from "./headline";
+export { default as Hero } from "./hero";
+export { default as LoraCreamTemplate } from "./index.jsx";
+export { default as Name } from "./name";
+export { default as Photo } from "./photo";
+export { default as Projects } from "./projects";
+export { default as ProjectPortfolio } from "./projects-portfolio";
+export { default as Skills } from "./skills";
+export { default as SocialLinks } from "./social-links";
