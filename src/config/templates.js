@@ -4,6 +4,7 @@ import MonochromeTemplate from "@/components/Templates/MonochromeTemplate";
 import NightScriptTemplate from "@/components/Templates/NightScriptTemplate";
 import ReadCVTemplate from "@/components/Templates/ReadCVTemplate";
 import RetroTemplate from "@/components/Templates/RetroTemplate";
+import TerminalSpaceTemplate from "@/components/Templates/TerminalSpaceTemplate";
 import VesperTemplate from "@/components/Templates/VesperTemplate";
 
 export const TEMPLATES_CONFIG = {
@@ -38,6 +39,11 @@ export const TEMPLATES_CONFIG = {
   VESPER_TEMPLATE: {
     component: VesperTemplate,
     // Same dark palette as Vesper, sidebar layout with fixed left nav
+    className: "bg-[#0a0a0a] text-zinc-100 min-h-screen w-full dark",
+  },
+  TERMINALSPACE_TEMPLATE: {
+    component: TerminalSpaceTemplate,
+    // Same dark palette as TerminalSpace, sidebar layout with fixed left nav
     className: "bg-[#0a0a0a] text-zinc-100 min-h-screen w-full dark",
   },
 };
