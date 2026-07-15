@@ -26,6 +26,7 @@ const headingVariants = cva("", {
       LoraCream:
         "mb-8 font-bold text-[#9E9A93] text-[10px] uppercase tracking-widest",
       Vesper: "mb-8 font-bold text-3xl text-zinc-100 md:text-4xl",
+      NightScript:"mb-8 font-bold text-3xl text-zinc-100 md:text-4xl"
     },
   },
   defaultVariants: { template: "default" },

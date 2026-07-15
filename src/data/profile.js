@@ -189,6 +189,13 @@ export const profileData = {
       description:
         "As a software engineer, I wanted to maximize the potential that AI brought forth to enhance our productivity. Thus, AINave was born. I had curated the best AI tools, shared trusted news, and created a space for meaningful discussions. The platform is your one-stop shop for discovering and sharing the latest about AI.",
     },
+    {
+      url: "https://wwww.ainave.com",
+      logo: "https://cdn.huntyourtribe.com/public/personal-space/2/profile-products_ih.0.logos/4b048f62c1cb3bf47b97c3246a70e8a03ad45b6445ac5fdd7d6c716c510e5219-9f13014e-ef3b-48fb-8292-81f5e28ba043.webp",
+      name: "AINave",
+      description:
+        "As a software engineer, I wanted to maximize the potential that AI brought forth to enhance our productivity. Thus, AINave was born. I had curated the best AI tools, shared trusted news, and created a space for meaningful discussions. The platform is your one-stop shop for discovering and sharing the latest about AI.",
+    },
   ],
   form_version: "v1.0",
   phone_number: "999999999",
@@ -241,6 +248,19 @@ export const profileData = {
       description:
         "Designed a high-throughput, custom dynamic sitemap generator for **Scaler Topics** that handles over 100K+ dynamic URLs. Implemented intelligent caching and streaming mechanisms to reduce generation time by 80% while boosting search engine visibility, driving a 2x increase in organic Google search traffic.",
     },
+    {
+      title: "Scaler Topics - SEO and Sitemap Generation Engine",
+      project_url: "https://www.scaler.com/topics/",
+      images: [
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+      ],
+      description:
+        "Designed a high-throughput, custom dynamic sitemap generator for **Scaler Topics** that handles over 100K+ dynamic URLs. Implemented intelligent caching and streaming mechanisms to reduce generation time by 80% while boosting search engine visibility, driving a 2x increase in organic Google search traffic.",
+    },
   ],
   freelancers_ih: [
     {
@@ -251,6 +271,19 @@ export const profileData = {
     },
   ],
   project_portfolio: [
+    {
+      title: "AINave Landing Page Design & UI/UX System",
+      project_url: "https://www.ainave.com",
+      images: [
+        "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1541462608143-67571c6738dd?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+      ],
+      description:
+        "Crafted a beautiful glassmorphism-based web app interface for AINave using high-fidelity Tailwind styles, custom dark-mode presets, and hardware-accelerated animations for tool-cards.",
+    },
     {
       title: "AINave Landing Page Design & UI/UX System",
       project_url: "https://www.ainave.com",

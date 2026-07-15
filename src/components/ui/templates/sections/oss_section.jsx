@@ -28,6 +28,7 @@ const headingVariants = cva("", {
       LoraCream:
         "mb-8 font-bold text-[#9E9A93] text-[10px] uppercase tracking-widest",
       Vesper: "mb-8 font-bold text-3xl text-zinc-100 md:text-4xl",
+      NightScript:"mb-8 font-bold text-3xl text-zinc-100 md:text-4xl"
     },
   },
   defaultVariants: { template: "default" },
@@ -51,6 +52,7 @@ const innerContainerVariants = cva("", {
       monochrome: "flex flex-col gap-2",
       LoraCream: "flex flex-col",
       Vesper: "space-y-4",
+      NightScript:"space-y-10"
     },
   },
   defaultVariants: { template: "default" },
@@ -68,6 +70,7 @@ const itemVariants = cva("", {
         "flex flex-col border-[#DDD9D0] border-b py-6 first:pt-0 last:border-b-0",
       Vesper:
         "rounded-xl border border-zinc-800 bg-zinc-900/60 p-5 transition-colors duration-200 hover:border-zinc-600",
+       NightScript:"rounded-xl border border-zinc-800 bg-zinc-900/60 p-5"
     },
   },
   defaultVariants: { template: "default" },
@@ -82,6 +85,7 @@ const linkContainerVariants = cva("", {
       monochrome: "text-lg",
       LoraCream: "font-semibold text-[#1C1C1A] text-sm",
       Vesper: "mb-2 font-semibold text-base text-zinc-100",
+      NightScript:"mb-4 font-semibold text-base text-zinc-100"
     },
   },
   defaultVariants: { template: "default" },
@@ -97,6 +101,7 @@ const linkVariants = cva("", {
       LoraCream: "transition-colors duration-150 hover:text-[#C9A84C]",
       Vesper:
         "underline-offset-4 transition-colors duration-150 hover:text-zinc-300 hover:underline",
+      NightScript:"underline-offset-4 transition-colors duration-150 hover:text-zinc-300 hover:underline"
     },
   },
   defaultVariants: { template: "default" },
@@ -115,6 +120,7 @@ const markdownVariants = cva("max-w-none", {
         "prose-sm prose mt-2 overflow-auto break-words prose-headings:text-[#9E9A93] prose-strong:text-[#1C1C1A] text-[#1C1C1A]/75 marker:text-[#9E9A93]",
       Vesper:
         "prose-sm prose mt-2 overflow-auto break-words prose-headings:text-zinc-400 prose-strong:text-zinc-200 text-sm text-zinc-400 marker:text-zinc-600",
+       NightScript:"prose-sm prose break-words prose-headings:text-zinc-400 prose-strong:text-zinc-200 text-sm text-zinc-400 marker:text-zinc-600"
     },
   },
   defaultVariants: { template: "default" },
