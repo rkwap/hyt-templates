@@ -17,7 +17,7 @@ export default function ProjectPortfolio({ projects }) {
       <div className="space-y-10">
         {projects.map((project, index) => (
           <div
-            className="rounded-xl border border-zinc-800 bg-zinc-900/60 p-5"
+            className="flex flex-col rounded-xl border border-zinc-800 bg-zinc-900/60 p-5 transition-colors duration-200 hover:border-zinc-600"
             id={`design-portfolio-${index + 1}`}
             key={index}
           >
