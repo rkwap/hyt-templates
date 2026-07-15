@@ -95,7 +95,7 @@ export default function TerminalSpace({ data }) {
 
       <ProjectsPM projects_pm={projects_pm} />
 
-      <Freelancers freelancers_ih={freelancers_ih} />
+      <Freelancers freelancers_ih={freelancers_ih}  template="TerminalSpace" />
 
       <ProjectPortfolio projects={project_portfolio} />
 
