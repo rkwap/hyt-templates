@@ -28,7 +28,8 @@ const headingVariants = cva("", {
       LoraCream:
         "mb-8 font-bold text-[#9E9A93] text-[10px] uppercase tracking-widest",
       Vesper: "mb-8 font-bold text-3xl text-zinc-100 md:text-4xl",      
-      NightScript:"mb-8 font-bold text-3xl text-zinc-100 md:text-4xl"
+      NightScript:"mb-8 font-bold text-3xl text-zinc-100 md:text-4xl",
+      TerminalSpace: "pt-4 pb-4 font-bold font-mono text-3xl text-white"
     },
   },
   defaultVariants: { template: "default" },
@@ -52,7 +53,8 @@ const innerContainerVariants = cva("", {
       monochrome: "flex flex-col gap-2",
       LoraCream: "flex flex-col",
       Vesper: "space-y-4",
-      NightScript:"space-y-4"
+      NightScript:"space-y-4",
+      TerminalSpace: "flex flex-col gap-4 pb-8"
     },
   },
   defaultVariants: { template: "default" },
@@ -70,7 +72,8 @@ const itemVariants = cva("", {
         "flex flex-col border-[#DDD9D0] border-b py-6 first:pt-0 last:border-b-0",
       Vesper:
         "rounded-xl border border-zinc-800 bg-zinc-900/60 p-5 transition-colors duration-200 hover:border-zinc-600",
-      NightScript:"flex flex-col rounded-xl border border-zinc-800 bg-zinc-900/60 p-5 transition-colors duration-200 hover:border-zinc-600"
+      NightScript:"flex flex-col rounded-xl border border-zinc-800 bg-zinc-900/60 p-5 transition-colors duration-200 hover:border-zinc-600",
+      TerminalSpace: "rounded-xl p-4 pb-2 border border-zinc-700 bg-zinc-900 shadow-black/60 shadow-lg transition-all duration-700 ease-out"
     },
   },
   defaultVariants: { template: "default" },
@@ -85,7 +88,8 @@ const linkContainerVariants = cva("", {
       monochrome: "text-lg",
       LoraCream: "font-semibold text-[#1C1C1A] text-sm",
       Vesper: "mb-2 font-semibold text-base text-zinc-100",
-      NightScript:"mb-4 font-semibold text-base text-zinc-100"
+      NightScript:"mb-4 font-semibold text-base text-zinc-100",
+      TerminalSpace: "line-clamp-2 flex-1 font-mono font-semibold text-white text-xl"
     },
   },
   defaultVariants: { template: "default" },
@@ -101,7 +105,8 @@ const linkVariants = cva("", {
       LoraCream: "transition-colors duration-150 hover:text-[#C9A84C]",
       Vesper:
         "underline-offset-4 transition-colors duration-150 hover:text-zinc-300 hover:underline",
-      NightScript:"underline-offset-4 transition-colors duration-150 hover:text-zinc-300 hover:underline"
+      NightScript:"underline-offset-4 transition-colors duration-150 hover:text-zinc-300 hover:underline",
+      TerminalSpace:"inline-flex items-center gap-1 transition-colors hover:text-green-400"
     },
   },
   defaultVariants: { template: "default" },
@@ -122,7 +127,8 @@ const markdownVariants = cva(
           "prose-sm prose mt-2 overflow-auto break-words prose-headings:text-[#9E9A93] prose-strong:text-[#1C1C1A] text-[#1C1C1A]/75 marker:text-[#9E9A93]",
         Vesper:
           "prose-sm prose mt-2 overflow-auto break-words prose-headings:text-zinc-400 prose-strong:text-zinc-200 text-sm text-zinc-400 marker:text-zinc-600",
-        NightScript:"prose-sm prose break-words prose-headings:text-zinc-400 prose-strong:text-zinc-200 text-sm text-zinc-400 marker:text-zinc-600"
+        NightScript:"prose-sm prose break-words prose-headings:text-zinc-400 prose-strong:text-zinc-200 text-sm text-zinc-400 marker:text-zinc-600",
+        TerminalSpace: "flex-1 overflow-auto break-words font-mono text-sm text-zinc-300 leading-relaxed"
       },
     },
     defaultVariants: { template: "default" },
