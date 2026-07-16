@@ -37,7 +37,7 @@ const Education = ({ education = [] }) => {
   }
 
   return (
-    <section className="mt-10 space-y-4" id="education">
+    <section className="mb-8 space-y-4" id="education">
       <h2 className="font-bold font-mono text-3xl text-white">Education</h2>
       <ul className="mt-4 flex list-disc flex-col space-y-4 pl-4 marker:text-green-500">
         {education.map((edu, index) => (

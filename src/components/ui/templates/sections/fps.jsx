@@ -26,7 +26,8 @@ const headingVariants = cva("", {
       LoraCream:
         "mb-8 font-bold text-[#9E9A93] text-[10px] uppercase tracking-widest",
       Vesper: "mb-8 font-bold text-3xl text-zinc-100 md:text-4xl",
-      NightScript:"mb-8 font-bold text-3xl text-zinc-100 md:text-4xl"
+      NightScript: "mb-8 font-bold text-3xl text-zinc-100 md:text-4xl",
+      TerminalSpace: "pt-4 pb-4 font-bold font-mono text-3xl text-white",
     },
   },
   defaultVariants: { template: "default" },
@@ -66,6 +67,8 @@ const linkVariants = cva("", {
         "flex items-center gap-1 border-[#DDD9D0] border-b py-4 text-[#1C1C1A] text-sm transition-colors duration-150 last:border-b-0 hover:text-[#C9A84C]",
       Vesper:
         "flex items-center gap-1 border-zinc-800 border-b py-4 text-sm text-zinc-300 underline-offset-4 transition-colors duration-150 last:border-b-0 hover:text-zinc-100 hover:underline",
+      TerminalSpace:
+        "inline-flex items-center gap-1 transition-colors hover:text-green-400",
     },
   },
   defaultVariants: { template: "default" },

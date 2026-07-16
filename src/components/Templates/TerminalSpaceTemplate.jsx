@@ -44,10 +44,8 @@ export default function TerminalSpace({ data }) {
 
   return (
     <div className="container mx-auto min-h-screen max-w-4xl bg-zinc-950 px-4 py-8 [--header-h:80px]">
-
       {/* ✅ Sticky wrapper — ONLY handles positioning, no clipping/rounding here */}
       <div className="lg:sticky top-0 z-[100] mb-8">
-
         {/* ✅ Visual wrapper — ONLY handles clipping/rounding, isolated paint layer */}
         <div
           className="
@@ -83,30 +81,25 @@ export default function TerminalSpace({ data }) {
       {/* Content Sections */}
       <About about={about} />
 
-      {experience.length > 0 && (
-        <Experience experience={experience} />
-      )}
+      {experience.length > 0 && <Experience experience={experience} />}
 
-      {projects.length > 0 && (
-        <Projects projects={projects} />
-      )}
+      {projects.length > 0 && <Projects projects={projects} />}
 
-      <Product products_ih={products_ih} />
+      <Product products_ih={products_ih} template="TerminalSpace" />
 
-      <ProjectsPM projects_pm={projects_pm} />
+      <ProjectsPM projects_pm={projects_pm} template="TerminalSpace" />
 
-      <Freelancers freelancers_ih={freelancers_ih}  template="TerminalSpace" />
+      <Freelancers freelancers_ih={freelancers_ih} template="TerminalSpace" />
 
       <ProjectPortfolio projects={project_portfolio} />
 
-      {education.length > 0 && (
-        <Education education={education} />
-      )}
+      {education.length > 0 && <Education education={education} />}
 
-      <OSSSection oss={oss} />
+      <OSSSection oss={oss} template="TerminalSpace" />
 
       <FeaturedSocialPostsSection
         featured_social_posts={featured_social_posts}
+        template="TerminalSpace"
       />
 
       {certifications.length > 0 && (
